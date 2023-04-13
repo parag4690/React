@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #676666;
+    border-radius: 6px;
+}
+
+.container_inside{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+    align-items: center;
+}
+.car{
+    color:white;
+}
+.dolar{
+    background-color: rgb(156, 8, 156);
+    padding:10px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid  white;
+}
+.date{
+    font-weight: 400;
+}
