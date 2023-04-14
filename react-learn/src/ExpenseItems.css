@@ -1,3 +1,8 @@
+.smallContainer{
+    display: flex;
+    flex-direction: column;
+   row-gap: 1.4em;
+}
 .container{
     display: flex;
     padding: 10px;
@@ -5,12 +10,13 @@
     align-items: center;
     background-color: #676666;
     border-radius: 6px;
+    column-gap: 12em;
 }
 
 .container_inside{
     display: flex;
     justify-content: space-between;
-    column-gap: 2em;
+    column-gap: 9em;
     align-items: center;
 }
 .car{
@@ -23,6 +29,7 @@
     font-weight: 700;
     border-radius: 5px;
     border: 1px solid  white;
+    cursor: pointer;
 }
 .date{
     font-weight: 400;
