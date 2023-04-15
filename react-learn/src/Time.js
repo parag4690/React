@@ -3,7 +3,7 @@ import './Time.css'
 function Time(props){
     const monthArray = ["January" , "febraury" , "march" , "april" , "may" , "june" , "july" , "august" , "september" , "octobar" , "november" 
 , "december"]
-    const month = monthArray[props.time.getMonth()-1];
+    const month = monthArray[props.time.getMonth()];
     const year = props.time.getFullYear();
     const date = props.time.getDate();
     return (

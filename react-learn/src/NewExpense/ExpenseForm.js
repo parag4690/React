@@ -2,7 +2,7 @@ import React , {useState} from "react";
 
 import './ExpenseForm.css'
 
-const ExpenseForm = () =>{
+const ExpenseForm = (props) =>{
     
     const [titleChange , setTitleChange] = useState('');
 
@@ -34,11 +34,14 @@ const ExpenseForm = () =>{
        // now update in form 
 
        const expenseDate = { // this object added inside form submition
+            date : new Date(dateChange),
             title : titleChange , 
-            amount : amountChange , 
-            date : new Date(dateChange)
+            amount : amountChange 
        }
-       console.log(expenseDate);
+      //  console.log(expenseDate);
+
+       props.onSaveExpense(expenseDate);
+
        // now when form is submit i want to things to clear -> two way binding
        setTitleChange('');
        setAmountChange('');
@@ -57,7 +60,7 @@ const ExpenseForm = () =>{
                {/*  */}
                <div className="new-expense__control">
                  <label>Amount</label>
-                 <input type="number" min="0.01" steps="0.01" onChange = {amountChangeHandler} value={amountChange} />
+                 <input type="number" onChange = {amountChangeHandler} value={amountChange} />
                </div>
                {/*  */}
                <div className="new-expense__control">

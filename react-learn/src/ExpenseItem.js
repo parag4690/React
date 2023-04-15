@@ -4,24 +4,25 @@ import Time from './Time';
 import React , {useState} from 'react';
 
 
-function ExpenseItem(props){
+function ExpenseItem({title,amount , dat}){
 
-    const [title , setTitle] = useState(props.title);
+    const [newtitle , setTitle] = useState(title);
 // it is called by all four components in expense but it will work only for 1 at a time
     const changeTitle = ()=>{
         setTitle("updated");
-        console.log(title);
+        // console.log(title);
     }
+    console.log(title );
 
     return (
        <div className="container">
           <div className="container_inside">
-            <Time time={props.dat}></Time>
+            <Time time={dat}></Time>
             {/* <div className="car"> <h2> {props.title} </h2></div> */}
             <div className="car"> <h2> {title} </h2></div>
 
           </div>
-          <div className="dolar" onClick={changeTitle}>${props.amount}</div>
+          <div className="dolar" onClick={changeTitle}>${amount}</div>
        </div>
     );
 }

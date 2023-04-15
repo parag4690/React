@@ -1,18 +1,37 @@
-import ExpenseItem from './ExpenseItem'
-import './ExpenseItems.css'
+import React, { useState } from "react";
+import ExpenseItem from "./ExpenseItem";
+import "./ExpenseItems.css";
+import ExpensesFilter from "./FilterExpense/ExpensesFilter";
 
-function Expense(props){
-    // console.log(props);
-    // console.log(props.a[0].date);
-    // const 
-      return (
-    <div className='smallContainer' >
-        <ExpenseItem dat = {props.a[0].date} title={props.a[0].title} amount = {props.a[0].amount}></ExpenseItem>
-          <ExpenseItem dat = {props.a[1].date} title={props.a[1].title} amount = {props.a[1].amount}></ExpenseItem>
-        <ExpenseItem dat = {props.a[2].date} title={props.a[2].title} amount = {props.a[2].amount}></ExpenseItem>
-       <ExpenseItem dat = {props.a[3].date} title={props.a[3].title} amount = {props.a[3].amount}></ExpenseItem>
+function Expense(props) {
+  const [newYear, setnewYear] = useState("2020");
+  const clickYear = (getClickedYear) => {
+    setnewYear(getClickedYear);
+    console.log(getClickedYear, "agaya expensese me ");
+  };
+
+  //
+  const filteredArray = props.a.filter((ex)=>{
+    return ex.date.getFullYear().toString() === newYear ;
+  })
+  
+  return (
+    <div>
+      <ExpensesFilter
+        defaultYear={newYear}
+        onClickYear={clickYear}
+      ></ExpensesFilter>
+      <div className="smallContainer">
+        {
+          filteredArray.map((ex)=>{
+               return <ExpenseItem dat ={ex.date} title={ex.title} amount={ex.amount} />
+          
+          })
+        }       
+        
       </div>
-      );
+    </div>
+  );
 }
 
 export default Expense;
