@@ -39,7 +39,8 @@ const DUMMY_EXPENSES = [
        
 
         const newItemsValue = (expenseDataWithNewValue)=>{
-              console.log(expenseDataWithNewValue);
+              // console.log(expenseDataWithNewValue);
+              console.log("checking what is here , " , expenseDataWithNewValue)
               setnewExpenses((prevExpenses)=>{
                 return [expenseDataWithNewValue , ...prevExpenses];
               })
@@ -47,9 +48,10 @@ const DUMMY_EXPENSES = [
         console.log(newExpenses , newExpenses[0].title);
 
         return (
-          <div className="page" >
-            {/* <h2>Let's get started!</h2> */}
-            <NewExpense onNewdata={newItemsValue}></NewExpense>
+          <div className="page" > 
+            {/* {    console.log(newItemsValue.length , "length of objects here we can say " , newItemsValue())   } */}
+
+            <NewExpense onNewdata={newItemsValue}></NewExpense> 
            
             <div className="Bigcontainer">
                 <Expense a = {newExpenses}></Expense>

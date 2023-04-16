@@ -36,7 +36,7 @@ const ExpenseForm = (props) =>{
        const expenseDate = { // this object added inside form submition
             date : new Date(dateChange),
             title : titleChange , 
-            amount : amountChange 
+            amount : +amountChange 
        }
       //  console.log(expenseDate);
 
@@ -71,6 +71,7 @@ const ExpenseForm = (props) =>{
 
             {/* button */}
             <div className="new-expense__actions">
+                <button onClick={props.onStopClick} >Cancel</button>
                 <button type="submit">Add Expense</button>
             </div>
         </form>

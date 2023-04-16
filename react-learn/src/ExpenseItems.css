@@ -1,8 +1,14 @@
 .smallContainer{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-   row-gap: 1.4em;
+   row-gap: 4em; */
+   
+   justify-content: space-around;
 }
+li{
+    margin-bottom: 2em;
+}
+
 .container{
     display: flex;
     padding: 10px;
@@ -10,13 +16,12 @@
     align-items: center;
     background-color: #676666;
     border-radius: 6px;
-    column-gap: 12em;
 }
 
 .container_inside{
     display: flex;
     justify-content: space-between;
-    column-gap: 9em;
+    column-gap: 4em;
     align-items: center;
 }
 .car{

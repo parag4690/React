@@ -1,0 +1,13 @@
+.FormContainer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7em;   
+  background-color: white;
+  padding: 15px 20px;
+  min-width: 35em;
+  border-radius: 6px;
+}
+.FormContainer.opacit{
+  opacity: 0.4;
+  z-index: 2;
+}

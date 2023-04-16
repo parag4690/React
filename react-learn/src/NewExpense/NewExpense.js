@@ -9,15 +9,21 @@ const NewExpense = (props) =>{
           const expenseDataFromChildren = {
             ...newExpenseData,
           }
-          // to check whether it reached successfully or not do console.log
-          console.log(expenseDataFromChildren);
           props.onNewdata(expenseDataFromChildren);
+    }
+    const [isEditing , setEditing]= useState(false);
+    
+    const EditingHandler = ()=>{
+      setEditing(true);
+    }
+
+    const stopEditing = () =>{
+      setEditing(false);
     }
     return (
        <div className="new-expense">
-          {/* <form></form>   splitting components*/}
-         
-         <ExpenseForm onSaveExpense = {saveExpenseHandler}></ExpenseForm>
+          { !isEditing && <button onClick={EditingHandler}>Add new Expense</button>}
+        { isEditing && <ExpenseForm onSaveExpense = {saveExpenseHandler} onStopClick={stopEditing}></ExpenseForm>}
 
        </div>
     );

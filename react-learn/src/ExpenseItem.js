@@ -12,10 +12,11 @@ function ExpenseItem({title,amount , dat}){
         setTitle("updated");
         // console.log(title);
     }
-    console.log(title );
+    console.log("a;ldskfjadfjaslfkj");
+    console.log(title , amount , dat , "adsfd" );
 
     return (
-       <div className="container">
+       <li className="container">
           <div className="container_inside">
             <Time time={dat}></Time>
             {/* <div className="car"> <h2> {props.title} </h2></div> */}
@@ -23,7 +24,7 @@ function ExpenseItem({title,amount , dat}){
 
           </div>
           <div className="dolar" onClick={changeTitle}>${amount}</div>
-       </div>
+       </li>
     );
 }
 

@@ -1,0 +1,14 @@
+.Details{
+    color:black;
+    font-weight: 600;
+}
+.detailFlex{
+   display: flex;
+   flex-direction: column;
+   row-gap: 0.4em;
+}
+.EnterDetail{
+    border: 1.6px solid rgb(219, 219, 219) ;
+    outline: none;
+    padding: 6px;
+}
