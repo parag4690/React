@@ -5,7 +5,7 @@ const AddnewDetail = (props) =>{
     if(updateArray.length === 0 )
      return;
 
-    
+    // print the elements given by user
     return (
         <div  className='addedDetail'>
            {

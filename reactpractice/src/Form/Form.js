@@ -14,17 +14,10 @@ const Form = (props) =>{
      const ageHandler = (event)=>{
          setNewfetchedAge(event.target.value);
      }
-
-
-//    const []
-   
-
-
     console.log(getAge , getName , "naya naam agya h ")
    
     const submitHandler = (event)=>{
         event.preventDefault();
-        // 
 
         const addDetail = {
             name:getName,
@@ -40,12 +33,9 @@ const Form = (props) =>{
         props.takeDataForm(addDetail);
         setNewfetchedAge('');
         setNewfetchedName('');
-        // console.log(getName , getAge , "submited form")
     }
-    // came form app
     const check = props.checkvalidBox;
 
-    //
     const ClickHandler=()=>{
         props.setValid(false); props.setNeg(false);
         props.setValidBox(false);
