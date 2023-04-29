@@ -1,0 +1,45 @@
+.bigCon{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    padding: 10px;
+    z-index: 2;
+    width: 40em;
+    border-radius: 20px;
+    margin: 1rem auto;
+}
+.ad{
+    align-self: flex-end;
+    font: inherit;
+    cursor: pointer;
+    background-color: #8a2b06;
+    border: 1px solid #8a2b06;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+label{
+    font-weight: 600;
+    font-size: 25px;
+}
+input {
+    padding: 4px;
+    border:2px solid rgb(226, 224, 224) ;
+    border-radius: 5px;
+
+}
+.price{
+    color: #8a2b06;
+    font-weight: 600;
+    font-size: 17px;
+}
+.c{
+  
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 12em;
+}

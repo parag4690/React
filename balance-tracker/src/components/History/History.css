@@ -1,0 +1,45 @@
+.history{
+    padding: 10px;
+    /* width: 120%; */
+}
+.pos{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-right: 5px solid rgb(84, 231, 21);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.17);
+    /* font-size: 1.2em; */
+}
+.neg{
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-right: 5px solid  red;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.17);
+
+}
+.store{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+    row-gap: 0.5em;
+}
+
+.clear{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(176, 174, 174);
+    padding-bottom: 10px;
+}
+.clearAll{
+    background-color: red;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.clearAll:hover{
+    background-color: rgb(199, 53, 53);
+}

@@ -1,0 +1,16 @@
+.baap{
+    background-color: #3f3f3f;
+    height: 100%;
+}
+body{
+    background-color: #3f3f3f;
+    position: relative;
+    /* display: flex;
+    height: 100vh;
+    width: 100vw; */
+}
+.baap.in{
+    background-color: black;
+    opacity: 0.4;
+    /* background-color:  rgba(18, 20, 18, 0.3) */
+}

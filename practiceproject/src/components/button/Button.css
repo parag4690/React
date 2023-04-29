@@ -1,0 +1,15 @@
+.buttonClass{
+    align-self: center;
+    min-width:6em;
+    padding:10px 10px;
+    font-size: 18px;
+    background-color: rgb(226, 39, 226);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttonClass.inValid{
+    background-color: rgb(169, 167, 167);
+    cursor: not-allowed;
+}

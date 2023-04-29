@@ -1,0 +1,23 @@
+.col{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgb(206, 203, 203);
+    align-items: center;
+    justify-content: center;
+    padding : 5px 55px;
+}
+.col.ex{
+    border-right: none;
+}
+.income{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.incomeAmt{
+    color: rgb(84, 231, 21);
+    font-weight: 600;
+    font-size: 30px;
+}
+.incomeAmt.ex{
+    color:red;
+}

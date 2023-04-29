@@ -1,0 +1,21 @@
+.tracker{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding: 8px;
+}
+.sumry{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.15);
+}
+.balance{
+    font-weight: 500;
+    font-size: 20px;
+}
+span{
+    font-size:40px;
+}
